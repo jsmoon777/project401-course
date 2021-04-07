@@ -1,0 +1,16 @@
+title: project401
+description: 401 green computer
+template:
+  repo: project401-template
+  name: project401
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
